@@ -1,7 +1,7 @@
 # Find value that occurs in odd number of elements.
 
 # Write a function:
-# 		def solution(A)
+# 	def solution(A)
 # that, given an array A consisting of N integers fulfilling the above conditions, returns the value of the unpaired element.
 # For example, given array A such that:
 
@@ -21,7 +21,7 @@ Python
 ```
 def solution(A):
 	soln = 0 
-    for i in A:
+	for i in A:
 		soln ^= i
-    return soln 
+	return soln 
 ```
