@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Mar 11 02:05:46 2022
-
 @author: brand
 """
 
@@ -23,14 +21,13 @@ Created on Fri Mar 11 02:05:46 2022
 # each element of array A is an integer within the range [1..1,000,000,000];
 # all but one of the values in A occur an even number of times.
 
-
-
+# soln
 def solution(A):
 	soln = 0 
 	for i in A:
 		soln ^= i
 	return soln 
 
-#test
+# test
 A = [9,3,9,3,9,7,9]
 print(solution(A))
