@@ -5,18 +5,17 @@
 
 # Implement a function that converts a fixed<w, b> representation to a real number. 
 # Use two's complement for negative numbers. 
+
 # The function signature is 
-
-
-#   def fromFixedPoint(w: int, b:int, bits:[int]) -> float:
+# def fromFixedPoint(w: int, b:int, bits:[int]) -> float:
 #     w: width of the binary representation
 #     b: binary point
 
-#   Test the following inputs:
+# Test the following inputs:
 
-#   fromFixedPoint(10, 3, [0, 1, 0, 1, 1, 0, 0, 1, 1, 0])
-#   fromFixedPoint(10, 5, [1, 0, 0, 1, 0, 1, 0, 1, 1, 1])
-#   fromFixedPoint(8, 2, [1, 0, 1, 0, 1, 0, 1, 1])
+# fromFixedPoint(10, 3, [0, 1, 0, 1, 1, 0, 0, 1, 1, 0])
+# fromFixedPoint(10, 5, [1, 0, 0, 1, 0, 1, 0, 1, 1, 1])
+# fromFixedPoint(8, 2, [1, 0, 1, 0, 1, 0, 1, 1])
 
 def fromFixedPoint(w: int, b:int, bits:[int]) -> float:
     x = -bits[0]*(2**(w-1-b))
